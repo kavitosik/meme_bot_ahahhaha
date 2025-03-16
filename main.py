@@ -38,7 +38,7 @@ async def main():
                 else:
                     anekdot = 'Не удалось получить анекдот'
 
-                await bot.send_message(CHANNEL_ID, f"Анекдот: {anekdot}")
+                await bot.send_message(CHANNAL_ID, f"Анекдот: {anekdot}")
                 logger.info(f"Бот рассказал: {anekdot}")
             except Exception as e:
                 logger.error(f"Ошибка при отправке сообщения {e}")
